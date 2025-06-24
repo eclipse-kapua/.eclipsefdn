@@ -22,6 +22,7 @@ orgs.newOrg('iot.kapua', 'eclipse-kapua') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "javascript-typescript",
       ],
       code_scanning_default_setup_enabled: true,
