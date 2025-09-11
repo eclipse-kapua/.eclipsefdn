@@ -58,10 +58,10 @@ orgs.newOrg('iot.kapua', 'eclipse-kapua') {
           value: "********",
         },
         orgs.newRepoSecret('KAPUA_GITLAB_API_TOKEN') {
-          value: "********",
+          value: "pass:bots/iot.kapua/gitlab.eclipse.org/api-token",
         },
         orgs.newRepoSecret('SONAR_TOKEN') {
-          value: "********",
+          value: "pass:bots/iot.kapua/sonarcloud.io/token",
         },
       ],
       rulesets: [
