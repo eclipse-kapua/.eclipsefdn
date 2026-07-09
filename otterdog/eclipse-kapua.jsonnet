@@ -24,6 +24,12 @@ orgs.newOrg('iot.kapua', 'eclipse-kapua') {
     orgs.newOrgSecret('CENTRAL_SONATYPE_TOKEN_USERNAME') {
       value: "pass:bots/iot.kapua/central.sonatype.org/token-username",
     },
+    orgs.newOrgSecret('DOCKER_HUB_USERNAME') {
+      value: "pass:bots/iot.kapua/docker.com/username",
+    },
+    orgs.newOrgSecret('DOCKER_HUB_TOKEN') {
+      value: "pass:bots/iot.kapua/docker.com/api-token",
+    },
   ],
   webhooks+: [
     orgs.newOrgWebhook('https://ci.eclipse.org/kapua/github-webhook/') {
